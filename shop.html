@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="css.css">
+</head>
+
+<header class="navigation__container">
+
+    <nav>
+            <div class="container">
+             <!-- Logo -->
+
+             <a href="forside.html" class="logo"><img src="img/logo.svg" alt="Logo" class="logo"></a>
+
+            <!-- Burger menu-->
+            <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+            <input type="checkbox" id="mobileicon" class="mobileicon">
+
+
+            <!-- Menu punkter -->
+            <div class="menuitems__container">
+                <a href="produktion.html" class="menuitem">PRODUKTION</a>
+                <a href="shop.html" class="menuitem">WEBSHOP</a>
+                <a href="omos.html" class="menuitem">OM OS</a>
+                <a href="kontakt.html" class="menuitem">KONTAKT</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<body>
+
+    <section class="baggrund">
+    <section class="overskrift_section">
+    <h1 class="overskrift_side">CIDER-TØRSDIG?</h1>
+    <h2 class="under_overskrift">Det forstår vi godt! Bestil din flaske her på siden..</h2>
+
+    <section id="section05" class="demo">
+        <a href="#section06"><span></span></a>
+      </section>
+</section>
+</section>
+
+    <div class="grid-container">
+
+        <div class="celle1">
+            <img src="img/billede1.jpg" alt="billede1" class="billede1"> 
+            <div class="overlay"></div>
+            <h2 class="overskrift">Sund flugt</h2> 
+            <p class="tekst1">Lækker boblende æblecider, frisk og frejdig til en god sommerdag</p>
+            <h3 class="pris">150 kr.</h3>
+            <a href="google.dk" class="knap"> KØB NU</a>
+        </div>
+
+        <div class="celle2">
+            <img src="img/billede2.jpg" alt="billede2" class="billede1">
+            <h2 class="overskrift">Fald op</h2> 
+            <p class="tekst1">Lækker saftig og sødæblecider. Perfekt bare at nyde for sig selv.</p>
+            <h3 class="pris">150 kr.</h3>
+            <a href="google.dk" class="knap"> KØB NU</a>
+        </div>
+
+      </div>
+
+      <p class="tekst2">"Vi producerer bæredygtigtigt og der er derfor kun de flasker der er. Når der er udsolgt må du væbme dig med tålmodighed og vente på næste års lækre cider."</p>
+    
+      <p class="tekst3">- Sebastian og Mikkel</p>
+
+<!-- Footer -->
+<footer class="page_footer">
+    <div class="footer_card">
+
+        <!-- Sociale medier -->
+        <h4 class="footer_card_heading">FIND OS PÅ</h4>
+        <a href="#"><img src="img/facebook.png" alt="facebook logo" class="some_image"></a>
+        <a href="#"><img src="img/instagram.png" alt="instagram" class="some_image"></a><br><br><br>
+
+    </div>
+
+    <div class="footer_card">
+        <!-- Kontakt -->
+        <h4 class="footer_card_heading">ÆBLEFALD</h4>
+        <address class="footer_link">
+            +45 28 20 20 20<br>
+            INFO@AEBLEFALD.DK<br>
+            8000 AARHUS <br>
+            
+
+        </address>
+        <br>
+
+    </div>
+
+
+</footer>
+
+
+      <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+
+      <script>
+        $(document).ready(function(){
+           $(window).scroll(function(){
+               $('.overskrift_section').css("opacity", 1- $(window).scrollTop() / 300)
+               $('.baggrund').css("opacity", 1- $(window).scrollTop() / 400)
+               $('.celle1').css("opacity", 1* $(window).scrollTop() / 300)
+               $('.celle2').css("opacity", 1* $(window).scrollTop() / 500)
+           })
+       })
+
+    
+   </script>
+</body>
+</html>
